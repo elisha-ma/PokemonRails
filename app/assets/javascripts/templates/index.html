@@ -1,0 +1,25 @@
+<div class="header">
+  <div class="topContainer">
+    <h1>Pokemon Battle Helper</h1>
+    
+    <div class="expandcollapse-item">
+      <div ng-click="active = !active" class="expandcollapse-heading">
+        <p class="description">how this works</p>
+      </div>
+            
+      <div class="slideDown" ng-hide="active">
+        <div class="descriptionContent">
+          <p>stuck grinding? let this help you fight your battles faster.<br> 
+             enter in your opponent's pokemon name and this will tell you which type to battle with.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="main">
+      <div class="queryContainer">
+        <input ng-model="query" class="querybox" name="query" type="text" placeholder="enter pokemon name">
+        <go-button query="query"></go-button>
+      </div>
+    </div>
+</div>
